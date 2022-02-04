@@ -534,7 +534,7 @@ function submitContactForm() {
         }
     }
     /*Captcha*/
-    if ((utag.gdpr.getCookieValues().c38 == "1")&&(jQuery(".g-recaptcha").html().length > 0)){
+    if (false){
         var response = grecaptcha.getResponse();
         if (response.length == 0) {
             jQuery(".statusrecaptcha").html(fng_script_vars.recaptcha);
